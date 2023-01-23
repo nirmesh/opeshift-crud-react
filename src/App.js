@@ -15,7 +15,7 @@ const App = () => {
 	const [ editing, setEditing ] = useState(false)
 
 	useEffect(() => {
-		axios.get('https://node-postgres-crud-api-nirmesh44-dev.apps.sandbox-m3.1530.p1.openshiftapps.com/users').then((response) => {
+		axios.get('http://node-postgres-crud-api-nirmesh44-dev.apps.sandbox-m3.1530.p1.openshiftapps.com/users').then((response) => {
 			setUsers(response.data);
 		});
 	}, []);
