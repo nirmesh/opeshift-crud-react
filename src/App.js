@@ -16,7 +16,8 @@ const App = () => {
 
 	useEffect(() => {
 		//axios.get('https://node-postgres-crud-api-nirmesh44-dev.apps.sandbox-m3.1530.p1.openshiftapps.com/users')
-		axios.get('https://172.30.193.9/users')
+		//axios.get('https://172.30.193.9/users')
+		axios.get('http://node-postgres-crud-api/users')
 		.then((response) => {
 			setUsers(response.data);
 		});
